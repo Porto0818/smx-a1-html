@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscripcio Curs Online</title>
+</head>
+
+    <body>
+        <header>
+            <h1>Inscripcio Curs Online de Futbol</h1>
+                <p>Omple el formulari per inscriute al curs de futbol</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Inici</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacte</a></li>
+            </ul>
+        </nav>
+    <main>
+        <form method="get"action="/submit" autocomplete="on">
+    <fieldset>
+        <legend><h2>Dades personals</h2></legend>
+        <label for="nom">Nom complet </label>
+        <input id="nom" name="nom" type="text" required minlength="3" maxlength="80" placeholder="Ex: Roger Portoles">
+        <br>
+        <label for="email">Correu electrònic </label>
+            <input id="email" name="email" type="email" required placeholder="exemple@gmail.com">
+            <br>
+        <label for="telefon">Telèfon </label>
+            <input id="telefon" name="telefon" placeholder="+34 123456789">
+            <br>
+        <label for="naixement">Data de naixement </label>
+            <input id="naixement" name="naixement" type="date" required>
+    </fieldset>
+    <fieldset>
+        <legend><h2>Objectiu i Experiencia prèvia</h2></legend>
+            <label for="Quina posicio jugues">
+                <strong>Quina posicio jugues:</strong>
+            </label>
+        <select id="Quina posicio jugues" name="Quina posicio jugues" required>
+        <option value="">Selecciona una opció</option>
+        <option value="Porter">Porter</option>
+        <option value="Defensa">Defensa</option>
+        <option value="migcentre">migcentre</option>
+        <option value="davanter">davanter</option>
+        </select>
+        <br>
+            <strong><label for="Experiencia prèvia">Experiencia previa:</label></strong>
+            <label><input type="radio" name="Nivell" id="Mai he Jugat a futbol">Mai he Jugat a futbol</label>
+            <label><input type="radio" name="Nivell" id="He Jugat algun cop futbol">He Jugat algun cop futbol</label>
+            <label><input type="radio" name="Nivell" id="He jugat sempre a futbol">He jugat sempre a futbol</label>
+    </fieldset>
+    <fieldset>
+            <legend><h3>Objectiu i motivació</h3></legend>
+            <strong>
+                <label for="Objectiu">Objectiu:</label>
+            </strong>
+            <br>
+            <input id="Aprednra a jugar" type="checkbox" name="Aprednra a jugar" >
+                <label for="Aprednra a jugar">Aprednra a jugar</label>
+            <br>
+            <input type="checkbox" name="Millorar" id="Millorar">
+                <label for="Millorar individualment">Millorar individualment</label>
+            <br>
+            <input type="checkbox" name="colectivament" id="colectivament">
+                <label for="Millorar colectivament">Millorar colectivament</label>
+            <br><br>
+            <strong>
+                <label for="motivació">Motivació a fer el curs</label>
+            </strong>
+            <br>
+            <textarea name="motivació" id="motivació" rows="4" cols="40" placeholder="Que vols aprendre" required minlength="20" maxlength="3000"></textarea>
+            <br><br>
+                <label for="Lloc entrenament"> Entrenaras a algun lloc?</label>
+            <input list="Ubicació entrenament" id="entrenament" name="entrenament">
+        </fieldset>
+        <input type="submit" value="Envia">
+    <footer>
+        <p>&copy;2025 Mi Sitio Web</p>
+</footer>
+</body>
+</html>
